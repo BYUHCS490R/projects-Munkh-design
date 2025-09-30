@@ -1,0 +1,31 @@
+main p {
+    color:darkcyan;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h1 {
+    color: hsl(148, 56%, 19%);
+}
+main h1{
+    color: slategray;
+}
+#pres {
+    color: brown;
+} 
+nav{color: rgb(25, 178, 178);}
+#pres2 {
+    color: magenta;
+}
+.Sda {
+    color:#043927;
+}
+.loco {
+    font-style: italic;
+}
+.l {
+    font-weight: bolder;
+}
