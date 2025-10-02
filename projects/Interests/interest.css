@@ -19,3 +19,17 @@ header h1 {
 .span {
     font-style: italic;
 }
+
+.DIV {
+    background-color: black;
+    color: aliceblue;
+}
+
+.div {
+    font-weight: lighter;
+    color: #999;
+}
+
+main {
+    color: #1282a2;
+}
