@@ -1,0 +1,21 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fefcfb;
+    font-size: large;
+}
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0a1128;
+}
+#aye {
+    color: #001f54;
+}
+
+
+.aye2 {
+    color: #034078;
+}
+
+.span {
+    font-style: italic;
+}
