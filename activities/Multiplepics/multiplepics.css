@@ -1,0 +1,21 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    background: url(pic1.jpg) darkcyan;
+    
+}
+header {
+    background: url(fire.jpeg) no-repeat right;
+    /*background-image: url(fire.jpeg);
+    background-repeat: no-repeat;
+    background-position: right; */
+}
+
+.other {
+    background-image: url(pic1.jpg);
+    background-color: darkcyan;
+}
+.list {
+    list-style-image: url(dot.png);
+    
+}
