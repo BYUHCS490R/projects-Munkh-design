@@ -1,0 +1,24 @@
+.current {
+    color: black;
+}
+.navlink {
+    color: indigo;
+}
+
+body {
+    background-image: url(blue.jpg);
+    
+}
+.list {
+    list-style-image: url(dot.png);
+}
+
+
+.home1 {
+    color: rgb(161, 13, 13);
+    font-family: 'Times New Roman', Times, serif;
+    background: url(byuh.png) no-repeat right;
+}
+.caf {
+    background: url(caf.jpg);
+}
