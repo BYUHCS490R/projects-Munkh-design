@@ -1,0 +1,46 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    /*margin-top: 300px; */
+}
+
+nav a {
+    display: block; /* inline-block*/
+    padding: 10px;
+    background-color: aqua;
+    border-bottom: thin solid white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.temple {
+    border: thin solid black;
+    width: 300px;
+}
+
+.temple img {
+    width: 100%;
+}
+.hammer {
+    float: right;
+}
+/*
+.hammer {
+    position: relative;
+    right: 200px;
+}*/
+/*.hammer {
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    margin: 0;
+    z-index: 10;
+}*/
+.floater {
+    float: left;
+}
+.stop {
+    clear: both;
+}
