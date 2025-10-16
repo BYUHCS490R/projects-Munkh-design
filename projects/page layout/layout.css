@@ -1,0 +1,88 @@
+body {
+    background-color: #283618;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 100px;
+    background-image: url('1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-clip: padding-box;
+    
+}
+
+.head {
+    font-size: 60px;
+    border: 2px solid #333;       
+    border-radius: 100px;    
+    background-color: #606c38;
+    padding: 1px;
+    
+}
+
+.hed {
+    text-align: left;
+    font-size: 30px;
+    background-size: cover;        /* or contain */
+    background-position: center;
+    text-shadow: 2px 2px 5px rgb(103, 103, 176);
+    border: 2px solid #333;      
+    border-radius: 10px;          
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3); 
+    background-color: #fefae0;
+}
+
+#wrapper {
+    background-color: #fefae0;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    display: inline-block; /* inline-block*/
+    padding: 8px;
+    background-color: #606c38;
+    border-bottom: thin solid white;
+    text-decoration: none;
+    color: black;
+    margin-right: 55px;
+    font-weight: bolder;
+    background-image: url(4.jpeg);
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:first-child {
+    margin-left: 80px; /* Adjust value as needed */
+}
+
+nav a:hover {
+    text-decoration: underline;
+} 
+
+main {
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+.dota2 {
+    border: thin solid black;
+    width: 400px;
+}
+
+.dota2 img {
+    width: 100%;
+}
+.dota2 {
+    float: left;
+}
+
+
+
+.stop {
+    clear: both;
+}
