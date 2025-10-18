@@ -1,0 +1,48 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* 100px 100px 100px; */
+    gap: 20px;
+}
+
+.child1 {
+    background-color: blueviolet;
+    /*margin: 10px;*/
+}
+
+.child2 {
+    background-color: aquamarine;
+    /*margin: 10px;*/
+}
+
+.child3 {
+    background-color: cornflowerblue;
+    /*margin: 10px;*/
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "lside main rside"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: lside;
+}
