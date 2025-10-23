@@ -9,14 +9,14 @@ body {
 
 .head {
     border: 10px solid #333;           
-    background-color: #606c38;
+    background-color: #4aa38d;
     padding: 1px;
     
 }
 
 
 nav {
-    background-color: #e6e8fa;
+    background-color: #e6eafa;
     display: flex;
     justify-content: center;
     gap: 15%;
@@ -43,9 +43,10 @@ nav {
 
   aside {
     width: 20%;               
-    background-color: #181fac;  
-    color: white;
+    background-color: #aad4b8;  
+    color: rgb(0, 0, 0);
     padding: 20px;
+    font-size: larger;
   }
 
 
@@ -94,27 +95,25 @@ nav {
   }
 
   footer {
-    grid-column: 1 / span 2; 
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+    padding: 20px 10%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, auto);
-    gap: 10px;
-    text-align: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   footer a {
-    display: block;           
-    color: white;
     text-decoration: none;
-    background-color: #444;
-    padding: 8px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    padding: 3px;
   }
 
   footer a:hover {
-    background-color: #555;
+    text-decoration: underline;
   }
