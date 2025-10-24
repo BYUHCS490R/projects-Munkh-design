@@ -1,0 +1,64 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+header {
+    background-color: darkblue;
+    color: beige;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cyan;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: cyan;
+    color: black;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+    color: blueviolet;
+}
+
+.mr {
+    display: flex;
+}
+
+.side {
+    width: 50%;
+}
+
+.side h3 {
+    margin: 0;
+}
+
+main h2 {
+    margin: 0;
+}
+
+.card {
+    border: thin solid rgb(0, 63, 251);
+    box-shadow: 3px 3px 5px rgb(60, 171, 199);
+    width: 20%;
+    margin: 5px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+}
