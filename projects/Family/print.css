@@ -1,0 +1,51 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background: white;
+    margin: 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header, footer {
+    background: none;
+    color: black;
+    text-align: center;
+    border: none;
+    padding: 5px;
+  }
+  
+  .f {
+    text-align: center;
+  }
+
+  .parent {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  aside, .p {
+    width: 100%;
+    background: none;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .n {
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: none;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+  }
+  
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
