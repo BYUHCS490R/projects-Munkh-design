@@ -1,0 +1,30 @@
+main {
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+  }
+
+table tr {
+    border: 1px solid black;
+}
+
+table th {
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #b4b4b4; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(91, 118, 172); 
+}
