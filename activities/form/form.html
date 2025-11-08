@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Erdenemunkhs Web Design</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">  
+            <div>
+                <label for="fname">Full Name:</label> 
+                <input type="text" name="fname" placeholder="Full Name" id="fname">
+            </div>
+            <div>
+                <label for="fname">Email:</label> 
+                <input type="email" name="email" value="your@email.com" id="email">
+            </div>
+            <div>
+                <label for="password">Password:</label> 
+                <input type="password" name="pass" id="password">
+            </div>
+            <div>
+                <label for="Country">Country</label>
+                <select name="Country" id="Country">
+                    <option value="blank">- - -</option>
+                    <option value="USA">United States of America</option>
+                    <option value="MNG">Mongolia</option>
+                    <option value="CAN">Canada</option>
+                </select>
+            </div>
+            <div>
+                <label><input type="checkbox">I agree to the terms</label>
+            </div>
+            <div>
+                Gender
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female" checked> Female</label>
+            </div>
+            <div>
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+                <input type="submit" value="Sign up">
+        </form>
+
+        <p>The form tag has an "action" attribute. What does it do? <br>
+            The form tag has a "method" attribute. What does it do? <br>
+            What is the difference between a "POST" and a "GET"?</p>
+
+        <p>Action attribute connects to second page. <br>
+            Method attribute will decide wheter show your info in URL. <br>
+            Post will hide your info in URL, Get will show everything.
+        </p>
+    </main>
+    <footer>
+        &copy;2025 Erdenemukh Bolor-Erdene
+    </footer>
+</body>
+</html>
