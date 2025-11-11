@@ -1,0 +1,37 @@
+.fr {
+    display: flex;
+    margin: 2%;
+}
+
+.fr label {
+    width: 100px;
+    text-align: right;
+}
+
+.p {
+    background-color: aquamarine;
+}
+
+.a {
+    background-color: cornflowerblue;
+    width: 80%;
+    margin: 4px 4px 4px 4px;
+    padding: 4px 4px 4px 4px;
+    border: 3px solid black;
+    box-shadow: 10px solid red;
+}
+
+.fc {
+    display: flex;
+    margin: 2%;
+}
+
+.fc label {
+    width: 100px;
+    text-align: right;
+}
+
+.spacer {
+    width: 80px;
+    text-align: right;
+}
