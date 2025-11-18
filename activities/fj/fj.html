@@ -19,18 +19,19 @@
     </nav>
     <main>
         <h2>Registration Form</h2>
-        <form action="test.html" method="post">
+        <div id="message"></div>
+        <form action="test.html" method="post" id="myForm">
             <fieldset>
                 <legend>Personal Information</legend>
 
                 <div class="f-g">
                     <label for="fullname">Full Name:</label>
-                    <input type="text" id="fname" name="fullname" placeholder="Full Name">
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
                 </div>
 
                 <div class="f-g">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" >
                 </div>
 
                 <div class="f-g">
@@ -40,7 +41,7 @@
 
                 <div class="f-g">
                     <label for="pass">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password">
                 </div>
 
                 <div class="f-g">
@@ -78,48 +79,16 @@
                 </div>
             </fieldset>
         </form>
-        <p>What is JavaScript? How did it get its name? <br>
-            What are the two ways you can run JavaScript? <br>
-            What was the most popular front-end js library? <br>
-            What is the most popular front-end js library today? <br>
-            JavaScript is a programming language that makes websites interactive. <br>
-            script and .js . <br>
-            jQuery. <br>
-            react.
+        <p>What is AJAX? <br>
+            Why do you put your JS Code in a separate file? <br>
+            AJAX is a technique used in web to request data from a server and update parts of the page without needing a full page reload. <br>
+            Putting JavaScript code in a separate file improves organization, reusability, caching performance, separation of concerns, debugging, and security.
 
         </p>
     </main>
     <footer>
         <p>&copy;Erdenemunkh Bolor-Erdene 2025</p>
     </footer>
-    <script>
-        document.getElementById('myFrom').addEventListener('submit', function(event){
-            event.preventDefault();
-            alert("Form Submitted");
-
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const age = document.getElementById('age').value;
-
-            if (!fullname || !email) {
-                alert("You need a name and email.")
-                return;
-            }
-
-            if (!age || age <18) {
-                alert("You need to be 18");
-                return;
-            }
-
-            const formData = {
-                name: fullname,
-                email: email,
-                
-            };
-            
-            console.log(formData);
-        });
-    </script>
+    <script src="fj.js"> </script>
 </body>
 </html>
