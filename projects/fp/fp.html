@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body>
+    <header>
+        <h1>Erdenemunkhs Web Design</h1>
+    </header>
+    <nav>
+        <a href="#">Links</a>
+        <a href="#">Links</a>
+        <a href="#">Links</a>
+        <a href="#">Links</a>
+        <a href="#">Links</a>
+    </nav>
+    <main>
+        <h2>Registration Form</h2>
+        <div id="message"></div>
+        <form action="test.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="f-g">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                </div>
+
+                <div class="f-g">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" >
+                </div>
+
+                <div class="f-g">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+                </div>
+
+                <div class="f-g">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="f-g">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" placeholder="Write something..."></textarea>
+                </div>
+
+                <div class="f-g c-g">
+                    <label><input type="checkbox" name="terms"> I agree to the terms</label>
+                </div>
+
+                <div class="f-g">
+                    <label for="age">Age:</label>
+                    <select id="age" name="age">
+                        <option value="">Select...</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                    </select>
+                </div>
+
+                <div class="f-g r-g">
+                    <span>Height:</span>
+                    <label><input type="radio" name="height" value="over"> Over 190cm</label>
+                    <label><input type="radio" name="height" value="under" checked> Under 190cm</label>
+                </div>
+
+                <div class="f-g">
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+
+                <div class="f-g">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;Erdenemunkh Bolor-Erdene 2025</p>
+    </footer>
+    <script src="fp.js"> </script>
+</body>
+</html>
