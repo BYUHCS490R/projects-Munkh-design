@@ -3,26 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveler</title>
+    <title>Traveler – France</title>
+    <meta name="description" content="France travel overview with Paris, art museums, and food.">
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <header>
-        <h1>TRAVEL AROUND THE WORLD</h1>
-    </header>
-    <nav>
-        <a href="final.html">Home</a>
-        <a href="page1.html">Japan</a>
-        <a href="page2.html" class="active">France</a>
-        <a href="page3.html">Brazil</a>
-        <a href="page4.html">Travel Comparison</a>
-        <a href="page5.html">Where Do you want to go?</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Traveler</div>
+            <div class="nav-links">
+                <a href="final.html">Home</a>
+                <a href="page1.html">Japan</a>
+                <a href="page2.html" class="active">France</a>
+                <a href="page3.html">Brazil</a>
+                <a href="page4.html">Comparison</a>
+                <a href="page5.html">Form</a>
+            </div>
+        </div>
     </nav>
-    <main>
 
+    <main class="page-wrapper">
+        <h1 class="page-title">France</h1>
+
+        <div class="info-grid">
+            <section class="info-card">
+                <h2>Overview</h2>
+                <p>
+                    France is known for its romantic cities, art, and food. Paris alone has famous landmarks
+                    like the Eiffel Tower and the Louvre Museum.
+                    <span class="ref">
+                        Info inspired by 
+                        <a href="https://en.parisinfo.com/" target="_blank">Paris Tourist Office</a>.
+                    </span>
+                </p>
+            </section>
+
+            <section class="info-card">
+                <h3>Paris Highlights</h3>
+                <ul>
+                    <li><strong>Eiffel Tower</strong> – iconic iron tower with city views.</li>
+                    <li><strong>Louvre Museum</strong> – huge art museum with the Mona Lisa.</li>
+                    <li><strong>Seine River</strong> – boat tours and river walks.</li>
+                </ul>
+                <figure>
+                    <img src="p1.jpg" alt="Eiffel Tower at sunset">
+                    <figcaption>
+                        Eiffel Tower details from
+                        <a href="https://www.toureiffel.paris/en" target="_blank">official Eiffel Tower website</a>.
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section class="info-card">
+                <h3>Art & Museums</h3>
+                <p>
+                    Visitors often spend hours inside the Louvre and other museums in Paris. You can see
+                    paintings, sculptures, and historical objects from many time periods.
+                    <a href="https://www.louvre.fr/en" target="_blank">[source]</a>
+                </p>
+                <figure>
+                    <img src="p2.jpg" alt="Louvre museum glass pyramid at night">
+                    <figcaption>Louvre Museum at night – one of the most visited museums in the world.</figcaption>
+                </figure>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>&copy;Erdenemunkh Bolor-Erdene 2025</p>
+        <p>&copy; 2025 Erdenemunkh Bolor-Erdene</p>
     </footer>
+
+    <script src="final.js"></script>
 </body>
 </html>

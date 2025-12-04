@@ -3,65 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveler</title>
+    <title>Traveler – Travel Comparison</title>
+    <meta name="description" content="Compare Japan, France, and Brazil by season, costs, and difficulty.">
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <header>
-        <h1>TRAVEL AROUND THE WORLD</h1>
-    </header>
-    <nav>
-        <a href="final.html">Home</a>
-        <a href="page1.html">Japan</a>
-        <a href="page2.html">France</a>
-        <a href="page3.html">Brazil</a>
-        <a href="page4.html" class="active">Travel Comparison</a>
-        <a href="page5.html">Where Do you want to go?</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Traveler</div>
+            <div class="nav-links">
+                <a href="final.html">Home</a>
+                <a href="page1.html">Japan</a>
+                <a href="page2.html">France</a>
+                <a href="page3.html">Brazil</a>
+                <a href="page4.html" class="active">Comparison</a>
+                <a href="page5.html">Form</a>
+            </div>
+        </div>
     </nav>
-    <main class="table">
-        <table>
-            <caption>Travel Comparison</caption>
-            <thead>
-                <tr>
-                    <th>Country</th>
-                    <th>Best month to travel</th>
-                    <th>Averrage cost per day</th>
-                    <th>Popular attraction</th>
-                    <th>Language spoken</th>
-                    <th>Travel difficulty level</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Japan</td>
-                    <td>April to September</td>
-                    <td>$100</td>
-                    <td>Tokyo, Mt. Fuji</td>
-                    <td>Japanese</td>
-                    <td>Medium</td>
-                </tr>
-                <tr>
-                    <td>France</td>
-                    <td>All Months</td>
-                    <td>$200</td>
-                    <td>Eiffel Tower, Louvre</td>
-                    <td>French</td>
-                    <td>Medium</td>
-                </tr>
-                <tr>
-                    <td>Brazil</td>
-                    <td>May to August</td>
-                    <td>$150</td>
-                    <td>Rio de Janeiro, Salvador</td>
-                    <td>Portugese</td>
-                    <td>Medium/Hard</td>
-                </tr>
-                
-            </tbody>
-        </table>
+
+    <main class="page-wrapper">
+        <h1 class="page-title">Travel Comparison</h1>
+
+        <div class="info-grid">
+            <section class="info-card">
+                <h2>Overview</h2>
+                <p>
+                    This table compares three destinations based on best time to visit, approximate daily
+                    costs, and overall travel difficulty. Values are estimates and can change based on
+                    your travel style.
+                    <span class="ref">
+                        Cost ranges inspired by budget data from 
+                        <a href="https://www.budgetyourtrip.com/" target="_blank">BudgetYourTrip</a>.
+                    </span>
+                </p>
+            </section>
+
+            <section class="info-card">
+                <h3>Country Comparison Table</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <caption>Travel Comparison</caption>
+                        <thead>
+                            <tr>
+                                <th>Country</th>
+                                <th>Best month to travel</th>
+                                <th>Average cost per day (USD)</th>
+                                <th>Popular attractions</th>
+                                <th>Language spoken</th>
+                                <th>Travel difficulty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Japan</td>
+                                <td>April (cherry blossoms), October</td>
+                                <td>$90–$120</td>
+                                <td>Tokyo, Kyoto, Mt. Fuji</td>
+                                <td>Japanese</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td>France</td>
+                                <td>May–September</td>
+                                <td>$150–$220</td>
+                                <td>Paris, Loire Valley, Nice</td>
+                                <td>French</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td>Brazil</td>
+                                <td>May–August</td>
+                                <td>$80–$150</td>
+                                <td>Rio de Janeiro, Salvador, Amazon</td>
+                                <td>Portuguese</td>
+                                <td>Medium / Hard</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h3>Travel Tips Video</h3>
+                <p>
+                    This video shares general travel tips that can help you prepare for trips to any of
+                    these countries:
+                    <a href="https://www.youtube.com/watch?v=5Ba82TKYCEU&t=30s" 
+                       target="_blank">
+                        YouTube: Travel Tips
+                    </a>
+                </p>
+            
+                <div class="video-wrapper">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/5Ba82TKYCEU?start=30"
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+            
+        </div>
     </main>
+
     <footer>
-        <p>&copy;Erdenemunkh Bolor-Erdene 2025</p>
+        <p>&copy; 2025 Erdenemunkh Bolor-Erdene</p>
     </footer>
+
+    <script src="final.js"></script>
 </body>
 </html>

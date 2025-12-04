@@ -3,27 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveler</title>
+    <title>Traveler – Explore The World</title>
     <link rel="stylesheet" href="final.css">
 </head>
+
 <body>
-    <header>
-        <h1>TRAVEL AROUND THE WORLD</h1>
-    </header>
-    <nav>
-        <a href="final.html" class="active">Home</a>
-        <a href="page1.html">Japan</a>
-        <a href="page2.html">France</a>
-        <a href="page3.html">Brazil</a>
-        <a href="page4.html">Travel Comparison</a>
-        <a href="page5.html">Where Do you want to go?</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Traveler</div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <div class="nav-links" id="nav-links">
+                <a href="final.html" class="active">Home</a>
+                <a href="page1.html">Japan</a>
+                <a href="page2.html">France</a>
+                <a href="page3.html">Brazil</a>
+                <a href="page4.html">Comparison</a>
+                <a href="page5.html">Form</a>
+            </div>
+        </div>
     </nav>
-    <main>
-        <h2>Introduction</h2>
-        <h3>Our vision is to provide sustainable and outstanding tours with life- transforming adventure and cultural trips for those who love to travel.</h3>
+    
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Travel Around the World</h1>
+            <p>Discover new places, cultures, landscapes, and unforgettable experiences.</p>
+            <a href="page1.html" class="hero-btn">Start Exploring</a>
+        </div>
+    </header>
+
+    <main class="home-section">
+
+        <h2 class="section-title">Popular Destinations</h2>
+
+        <div class="card-grid">
+
+            <article class="card">
+                <img src="j1.jpeg" alt="Japan">
+                <div class="card-body">
+                    <h3>Japan</h3>
+                    <p>Modern cities, peaceful temples, cherry blossoms, Mt. Fuji, and incredible culture.</p>
+                    <a href="page1.html" class="card-btn">View More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="p1.jpg" alt="France">
+                <div class="card-body">
+                    <h3>France</h3>
+                    <p>Romantic cities, art museums, food, and the iconic Eiffel Tower.</p>
+                    <a href="page2.html" class="card-btn">View More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="b1.jpg" alt="Brazil">
+                <div class="card-body">
+                    <h3>Brazil</h3>
+                    <p>Beaches, festivals, rainforests, and one of the world’s most vibrant cultures.</p>
+                    <a href="page3.html" class="card-btn">View More</a>
+                </div>
+            </article>
+
+        </div>
     </main>
+
     <footer>
-        <p>&copy;Erdenemunkh Bolor-Erdene 2025</p>
+        <p>&copy; 2025 Erdenemunkh Bolor-Erdene</p>
     </footer>
+    <script src="final.js"></script>
 </body>
 </html>

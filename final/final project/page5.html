@@ -3,94 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveler</title>
+    <title>Traveler – Travel Request Form</title>
+    <meta name="description" content="Submit a travel interest form with your destination, budget, and month.">
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <header>
-        <h1>TRAVEL AROUND THE WORLD</h1>
-    </header>
-    <nav>
-        <a href="final.html">Home</a>
-        <a href="page1.html">Japan</a>
-        <a href="page2.html">France</a>
-        <a href="page3.html">Brazil</a>
-        <a href="page4.html">Travel Comparison</a>
-        <a href="page5.html" class="active">Where Do you want to go?</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Traveler</div>
+            <div class="nav-links">
+                <a href="final.html">Home</a>
+                <a href="page1.html">Japan</a>
+                <a href="page2.html">France</a>
+                <a href="page3.html">Brazil</a>
+                <a href="page4.html">Comparison</a>
+                <a href="page5.html" class="active">Form</a>
+            </div>
+        </div>
     </nav>
-    <main class="f">
-        <h2>Request Form</h2>
-        <div id="message"></div>
-        <form action="test.html" method="post" id="myForm">
-            <fieldset>
-                <legend>Fill out these form</legend>
 
-                <div class="f">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
-                </div>
+    <main class="page-wrapper">
+        <h1 class="page-title">Travel Request Form</h1>
 
-                <div class="f">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" >
-                </div>
+        <div class="info-grid">
+            <section class="info-card form-card">
+                <h2>Tell Us Where You Want to Go</h2>
+                <p>
+                    Fill out this form to share your travel preferences. Our team will check that your
+                    information and will made plan for you.
+                </p>
 
-                <div class="f">
-                    <label for="select">Where do you want to travel:</label>
-                    <select name="desired place to visit" id="desire">
-                        <option value="">Select..</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Mongolia">Mongolia</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Germany">Germany</option>
-                    </select>
-                </div>
-                <div class="f">
-                    <label for="select">Estimated travel budget range:</label>
-                    <select name="travel budget" id="budget">
-                        <option value="">Select..</option>
-                        <option value="$500 - $1000">$500 - $1000</option>
-                        <option value="$1000 - $1500">$1000 - $1500</option>
-                        <option value="$1500 - $2000">$1500 - $2000</option>
-                        <option value="$2000 - $2500">$2000 - $2500</option>
-                    </select>
-                </div>
-                <div class="f">
-                    <label for="select">Preferred travel month:</label>
-                    <select name="travel budget" id="budget">
-                        <option value="">Select..</option>
-                        <option value="January">January</option>
-                        <option value="February">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                        <option value="October">October</option>
-                        <option value="November">November</option>
-                        <option value="December">December</option>
-                    </select>
-                </div>
-                <div class="f">
-                    <label for="comment">Reason you wanted to visit this country:</label>
-                    <textarea id="comment" name="comment" placeholder="Write something..."></textarea>
-                </div>
+                <div id="message"></div>
 
-                <div class="f">
-                    <label><input type="checkbox" name="terms">I would like to receive travel tips by email</label>
-                </div>
-
-               
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-            </fieldset>
+                <form id="myForm">
+                    <fieldset>
+                        <legend>Travel Request</legend>
+                
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                
+                        <label for="desire">Where do you want to travel?</label>
+                        <select name="desired_place" id="desire" required>
+                            <option value="">Select...</option>
+                            <option value="Japan">Japan</option>
+                            <option value="France">France</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Germany">Germany</option>
+                        </select>
+                
+                        <label for="budget">Estimated travel budget range:</label>
+                        <select name="budget" id="budget" required>
+                            <option value="">Select...</option>
+                            <option value="$500 - $1000">$500 - $1000</option>
+                            <option value="$1000 - $1500">$1000 - $1500</option>
+                            <option value="$1500 - $2000">$1500 - $2000</option>
+                            <option value="$2000 - $2500">$2000 - $2500</option>
+                        </select>
+                
+                        <label for="month">Preferred travel month:</label>
+                        <select name="month" id="month" required>
+                            <option value="">Select...</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                
+                        <label for="comment">Reason you want to visit this country:</label>
+                        <textarea id="comment" name="comment" placeholder="Write something..." rows="4"></textarea>
+                
+                        <label class="checkbox">
+                            <input type="checkbox" name="terms">
+                            I would like to receive travel tips by email.
+                        </label>
+                
+                        <div class="form-actions">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+                
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>&copy;Erdenemunkh Bolor-Erdene 2025</p>
+        <p>&copy; 2025 Erdenemunkh Bolor-Erdene</p>
     </footer>
-    <script src="final.js"> </script>
+
+    <script src="final.js"></script>
 </body>
 </html>

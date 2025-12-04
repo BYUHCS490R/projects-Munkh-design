@@ -3,26 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveler</title>
+    <title>Traveler – Brazil</title>
+    <meta name="description" content="Brazil travel overview with Rio de Janeiro, Carnival, and nature.">
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <header>
-        <h1>TRAVEL AROUND THE WORLD</h1>
-    </header>
-    <nav>
-        <a href="final.html">Home</a>
-        <a href="page1.html">Japan</a>
-        <a href="page2.html">France</a>
-        <a href="page3.html" class="active">Brazil</a>
-        <a href="page4.html">Travel Comparison</a>
-        <a href="page5.html">Where Do you want to go?</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Traveler</div>
+            <div class="nav-links">
+                <a href="final.html">Home</a>
+                <a href="page1.html">Japan</a>
+                <a href="page2.html">France</a>
+                <a href="page3.html" class="active">Brazil</a>
+                <a href="page4.html">Comparison</a>
+                <a href="page5.html">Form</a>
+            </div>
+        </div>
     </nav>
-    <main>
 
+    <main class="page-wrapper">
+        <h1 class="page-title">Brazil</h1>
+
+        <div class="info-grid">
+            <section class="info-card">
+                <h2>Overview</h2>
+                <p>
+                    Brazil is famous for beautiful beaches, Carnival parades, and the Amazon rainforest.
+                    It is the largest country in South America with many different landscapes.
+                    <span class="ref">
+                        Info inspired by 
+                        <a href="https://www.visitbrasil.com/" target="_blank">Visit Brasil</a>.
+                    </span>
+                </p>
+            </section>
+
+            <section class="info-card">
+                <h3>Rio de Janeiro</h3>
+                <p>
+                    Rio is known for Christ the Redeemer statue, Sugarloaf Mountain, and Copacabana Beach.
+                    Many visitors enjoy city views from the hills around Rio.
+                    <a href="https://visitbrasil.com/en/location/rio-de-janeiro-en/" target="_blank">[source]</a>
+                </p>
+                <figure>
+                    <img src="b1.jpg" alt="Coastline and city in Rio de Janeiro">
+                    <figcaption>Rio de Janeiro combines mountains, sea, and city life.</figcaption>
+                </figure>
+            </section>
+
+            <section class="info-card">
+                <h3>Festivals & Nature</h3>
+                <ul>
+                    <li><strong>Carnival</strong> – parades, costumes, and music in major cities.</li>
+                    <li><strong>Beaches</strong> – warm weather and long coastlines.</li>
+                    <li><strong>Amazon rainforest</strong> – rich biodiversity and river tours.</li>
+                </ul>
+                <figure>
+                    <img src="b2.jpeg" alt="Tropical beach scene in Brazil">
+                    <figcaption>Brazil’s coastline is a big part of its travel appeal.</figcaption>
+                </figure>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>&copy;Erdenemunkh Bolor-Erdene 2025</p>
+        <p>&copy; 2025 Erdenemunkh Bolor-Erdene</p>
     </footer>
+
+    <script src="final.js"></script>
 </body>
 </html>

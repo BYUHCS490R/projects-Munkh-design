@@ -3,26 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveler</title>
+    <title>Traveler – Japan</title>
+    <meta name="description" content="Japan travel overview with highlights like Tokyo, Kyoto, and Mt. Fuji.">
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <header>
-        <h1>TRAVEL AROUND THE WORLD</h1>
-    </header>
-    <nav>
-        <a href="final.html">Home</a>
-        <a href="page1.html" class="active">Japan</a>
-        <a href="page2.html">France</a>
-        <a href="page3.html">Brazil</a>
-        <a href="page4.html">Travel Comparison</a>
-        <a href="page5.html">Where Do you want to go?</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Traveler</div>
+            <div class="nav-links">
+                <a href="final.html">Home</a>
+                <a href="page1.html" class="active">Japan</a>
+                <a href="page2.html">France</a>
+                <a href="page3.html">Brazil</a>
+                <a href="page4.html">Comparison</a>
+                <a href="page5.html">Form</a>
+            </div>
+        </div>
     </nav>
-    <main>
 
+    <main class="page-wrapper">
+        <h1 class="page-title">Japan</h1>
+
+        <div class="info-grid">
+            <section class="info-card">
+                <h2>Overview</h2>
+                <p>
+                    Japan is a country where modern technology and ancient traditions exist side by side.
+                    You can take high-speed trains, visit quiet temples, and enjoy city lights all in one trip.
+                    <span class="ref">
+                        Info inspired by 
+                        <a href="https://www.japan.travel/en/" target="_blank">Japan National Tourism</a>.
+                    </span>
+                </p>
+            </section>
+
+            <section class="info-card">
+                <h3>Top Places to Visit</h3>
+                <ul>
+                    <li><strong>Tokyo</strong> – shopping, anime, food, and city views.</li>
+                    <li><strong>Kyoto</strong> – temples, shrines, and traditional tea houses.</li>
+                    <li><strong>Osaka</strong> – street food and a more relaxed city feel.</li>
+                </ul>
+                <figure>
+                    <img src="j1.jpeg" alt="Tokyo city at night">
+                    <figcaption>
+                        Tokyo skyline – based on photos shown on 
+                        <a href="https://www.japan.travel/en/destinations/kanto/tokyo/" target="_blank">Japan Travel – Tokyo</a>.
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section class="info-card">
+                <h3>Mt. Fuji & Nature</h3>
+                <p>
+                    Mt. Fuji is the highest mountain in Japan and a national symbol. Many visitors
+                    enjoy seeing it from nearby lakes or hiking part of the trail.
+                    <a href="https://www.japan-guide.com/e/e2172.html" target="_blank">[source]</a>
+                </p>
+                <figure>
+                    <img src="j2.jpg" alt="Mt Fuji with a lake in front">
+                    <figcaption>Mt. Fuji is popular for photography and hiking in good weather.</figcaption>
+                </figure>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>&copy;Erdenemunkh Bolor-Erdene 2025</p>
+        <p>&copy; 2025 Erdenemunkh Bolor-Erdene</p>
     </footer>
+
+    <script src="final.js"></script>
 </body>
 </html>

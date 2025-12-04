@@ -1,54 +1,50 @@
-const currentPage = window.location.pathname.split("/").pop();
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
 
-document.querySelectorAll("nav a").forEach(link => {
-    const linkHref = link.getAttribute("href");
-
-    if (linkHref === currentPage) {
-        link.classList.add("active");
+    if (hamburger) {
+        hamburger.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
     }
 });
 
 
-document.getElementById('myForm').addEventListener('submit', function(event){
+document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const fullname = document.getElementById('fullname').value;
-    const email = document.getElementById('email').value;
-    
+    const fullname = document.getElementById("fullname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const desire = document.getElementById("desire").value;
+    const budget = document.getElementById("budget").value;
+    const month = document.getElementById("month").value;
+    const comment = document.getElementById("comment").value;
 
     if (!fullname || !email) {
-        alert("You need a name and email.")
+        alert("Name and email are required.");
         return;
     }
 
+    const output = `
+        <h2>Submission Received</h2>
 
-    const formData = {
-        name: fullname,
-        email: email,
-        
-    };
-    
-    alert("Form Submitted");
-    console.log(formData);
+        <p><strong>Name:</strong> ${fullname}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Destination:</strong> ${desire}</p>
+        <p><strong>Budget:</strong> ${budget}</p>
+        <p><strong>Preferred Month:</strong> ${month}</p>
+        <p><strong>Reason:</strong> ${comment}</p>
+    `;
 
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "final.json", true);
-    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    xhr.onreadystatechange = function() {
-        
-        if (xhr.readyState === 4 & xhr.status === 200) {
-            alert("Form submitted succesfully!");
-            const response = JSON.parse(xhr.responseText);
-            console.log(response);
-            //document.getElementById('myForm').reset();
-            document.getElementById('myForm').innerHTML = '';
-            document.getElementById('message').innerText = response.message;
-        
-        } else if (xhr.readyState === 4)  
-            {
-            alert("Error submiting form.");
-        }
-    }
-    xhr.send(JSON.stringify(formData));
+    document.getElementById("myForm").style.display = "none";
+    document.getElementById("message").innerHTML = output;
 
+    fetch("submit.json")
+        .then(response => response.json())
+        .then(data => {
+            const msg = document.createElement("p");
+            msg.style.fontWeight = "bold";
+            msg.textContent = data.message;
+            document.getElementById("message").appendChild(msg);
+        });
 });
